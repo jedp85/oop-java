@@ -7,6 +7,5 @@ public class Main {
 		Point q = new Point(3,5);
 		Point s = p.add(q);
 		System.out.print(s);
-		"add"
 	}
 }

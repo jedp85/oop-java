@@ -18,5 +18,4 @@ public class Point {
 		//return result;
 		return new Point(this.x + other.x, this.y + other.y);
 	}
-	"add"
 }
