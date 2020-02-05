@@ -9,13 +9,14 @@ public class Point {
 	}
 	public int getX() { return x; }
 	public int getY() { return y; }
-	
+
+	@Override
 	public String toString() {
 		return "(" + x + ", " + y + ")";
 	}
 	public Point add(Point other){
-		//Point result = new Point(this.x + other.x, this.y + other.y); Forma base
-		//return result;
-		return new Point(this.x + other.x, this.y + other.y);
+		//Point result = new Point(this.x + other.x, this.y + other.y); Esta será a forma mais usal de descrever o metodo add
+		//return result; adicionando no fim o result ao return
+		return new Point(this.x + other.x, this.y + other.y); //Esta é a forma resumida de escrever
 	}
 }
