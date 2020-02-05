@@ -19,4 +19,15 @@ public class Point {
 		//return result; adicionando no fim o result ao return
 		return new Point(this.x + other.x, this.y + other.y); //Esta é a forma resumida de escrever
 	}
+
+	public Point subtract(Point other) {
+		//return new Point(this.x - other.x, this.y - other.y);
+		Point negativeOther = new Point(- other.x, - other.y);
+		return add(negativeOther);
+		//this.add(negativeOther); outra forma de escrever a parte de cima
+	}
 }
+
+//Cenas para fazer depois....
+
+// multiplicacao e divisao de pontos, div usa a mult

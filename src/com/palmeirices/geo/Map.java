@@ -8,7 +8,7 @@ public class Map {
 		this.width = width;
 	}
 
-	public Map size(Map Size) {
-		return Map (Size.lenght, Size.width);
-	}
+//	public Map size(Map Size) {
+//		return Map (Size.lenght, Size.width);
+//	}
 }
