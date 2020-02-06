@@ -1,14 +1,14 @@
 package com.palmeirices.geo;
 
 public class Point {
-	private int x, y;
+	private double x, y;
 
-	public Point(int x, int y) {
+	public Point(double x, double y) {
 		this.x = x;
 		this.y = y;
 	}
-	public int getX() { return x; }
-	public int getY() { return y; }
+	public double getX() { return x; }
+	public double getY() { return y; }
 
 	@Override
 	public String toString() {
@@ -26,8 +26,16 @@ public class Point {
 		return add(negativeOther);
 		//this.add(negativeOther); outra forma de escrever a parte de cima
 	}
+
+	public Point multiply(Point other) {
+		return new Point(this.x * other.x, this.y * other.y); //multiplica
+	}
+
+	public Point divide(Point other) {
+		Point invertDivision = new Point( 1/other.x, 1/other.y);
+		return multiply(invertDivision);
+	}
 }
 
 //Cenas para fazer depois....
-
 // multiplicacao e divisao de pontos, div usa a mult
